@@ -10,6 +10,7 @@ import normalizeColor from '../utils/normalizeColor';
  */
 export default function renderText(a) {
   var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+  a.size = a.size ? a.size : 10;
 
   setAttributes(text, {
     x: a.x,
